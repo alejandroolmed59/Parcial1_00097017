@@ -53,8 +53,8 @@ header h1 {
 }
 
 .logo {
-    height: 80px;
-    width: 80px;
+    height: 90px;
+    width: 90px;
 }
 
 .logo img {
@@ -62,6 +62,7 @@ header h1 {
     width: 150%;
     position: relative;
     top: 1.5em;
+    left: 3.5em;
 }
 
 .container div {
@@ -83,6 +84,7 @@ main {
 
 main h3 {
     text-transform: capitalize;
+    color: #612e1d;
 }
 
 .imagenNoticia {
@@ -105,11 +107,12 @@ main div {
     flex-direction: column;
     align-items: left;
     border-radius: 0.5em;
-    border: 1px #c4c4be solid;
+    border: 1px #f5f5f5 solid;
     margin: 5px;
+    background-color: #f5f5f5;
 }
 
-.read {
+.ler {
     border: none;
     padding: 2em;
     margin-bottom: 2em;
@@ -123,13 +126,14 @@ main div {
 #suscribirse {
     background-image: url(img/contacus.jpg);
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: cover;
     background-position: center;
-    height: 75vh;
+    height: 60vh;
     width: 100%;
     display: grid;
     grid-template-columns: 45% 45%;
     grid-column-gap: 1.5em;
+    color: #f5f5f5;
 }
 
 .read:hover {
@@ -137,7 +141,7 @@ main div {
     cursor: pointer;
 }
 
-#suscribirse div:nth-child(1) {
+#suscribirse .sub1 {
     height: 100%;
     width: 70%;
     margin-left: 6em;
@@ -164,7 +168,7 @@ main div {
     height: 8em;
 }
 
-#suscribirse div:nth-child(2) {
+#suscribirse .sub2 {
     position: relative;
     top: 1em;
     padding: 1em;
@@ -172,4 +176,46 @@ main div {
     border-radius: 10px;
     background-color: #440d5a;
     opacity: 0.5;
+}
+
+footer {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    background-color: #000000;
+    color: #f5f5f5;
+    justify-content: space-around;
+}
+
+footer h4 {
+    padding-left: 2em;
+}
+
+footer ul {
+    list-style: none;
+    padding-left: 3em;
+}
+
+footer ul li a {
+    text-decoration: none;
+    color: #f5f5f5;
+}
+
+@media only screen and (max-width: 650px) {
+    main {
+        grid-template-columns: 45% 45%;
+    }
+}
+
+@media only screen and (max-width: 435px) {
+    main {
+        grid-template-columns: 100%;
+        width: 100%;
+    }
+    #suscribirse {
+        height: 100vh;
+        grid-template-columns: 100%;
+        grid-template-rows: 45% 45%;
+        background-position: right;
+    }
 }
