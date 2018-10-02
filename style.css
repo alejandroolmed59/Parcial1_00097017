@@ -15,10 +15,11 @@
     height: 100%;
     margin: 0;
     padding: 0;
+    background: rgba(0, 0, 0, 0.5);
+    opacity: 1;
 }
 
 header {
-    font-family: 'Monoton', cursive !important;
     color: #f5f5f5;
     height: 100vh;
     width: 100%;
@@ -29,6 +30,7 @@ header {
 }
 
 .container h1 {
+    font-family: 'Monoton', cursive !important;
     font-weight: normal;
     font-size: 3rem;
 }
@@ -50,6 +52,10 @@ header {
     text-decoration: none;
     text-transform: uppercase;
     color: #f5f5f5;
+}
+
+.navPrincipal ul li a:hover {
+    text-decoration: underline;
 }
 
 #rombo {
@@ -75,6 +81,14 @@ header {
 
 .flecha {
     margin-top: 20%;
+}
+
+.flecha a {
+    text-decoration: none;
+}
+
+.flecha:hover {
+    cursor: pointer;
 }
 
 main {
@@ -105,7 +119,7 @@ main img {
     top: 2em;
 }
 
-main div {
+main section {
     padding: 0 .5em .5em .5em;
     display: flex;
     flex-direction: column;
@@ -117,12 +131,14 @@ main div {
 }
 
 .ler {
+    font-size: 0.8rem;
     border: none;
-    padding: 2em;
+    padding: 1em;
     margin-bottom: 2em;
+    transition: background-color 0.5s ease;
     background-color: orange;
     color: #f5f5f5;
-    border-radius: 0.5em;
+    border-radius: 1em;
     width: 100%;
     text-align: center;
 }
@@ -130,6 +146,7 @@ main div {
 .ler:hover {
     background-color: rgba(245, 245, 245, 0.335);
     color: orange;
+    cursor: pointer;
 }
 
 #suscribirse {
@@ -169,8 +186,12 @@ main div {
 }
 
 #suscribirse form input {
-    border-radius: 0.3em;
+    border-radius: 0.6em;
     height: 2em;
+}
+
+form>ler {
+    padding-bottom: 1em;
 }
 
 #suscribirse form #comm {
@@ -184,7 +205,7 @@ main div {
     height: 90%;
     border-radius: 10px;
     background-color: #440d5a;
-    opacity: 0.5;
+    opacity: 0.9;
 }
 
 footer {
@@ -197,12 +218,12 @@ footer {
 }
 
 footer h4 {
-    padding-left: 2em;
+    padding-left: 1.9em;
 }
 
 footer ul {
     list-style: none;
-    padding-left: 3em;
+    padding-left: 3.1em;
 }
 
 footer ul li a {
