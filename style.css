@@ -1,6 +1,7 @@
 :root {
     box-sizing: border-box;
     font-size: calc(0.5em + 1vw);
+    font-family: 'Raleway', sans-serif;
 }
 
 *,
@@ -17,6 +18,7 @@
 }
 
 header {
+    color: #f5f5f5;
     font-family: 'Monoton', cursive;
     height: 100vh;
     width: 100%;
@@ -24,6 +26,11 @@ header {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+header h1 {
+    text-transform: uppercase;
+    font-family: 'Monoton', cursive;
 }
 
 .navPrincipal ul {
@@ -63,5 +70,106 @@ header {
     justify-content: center;
     align-items: center;
     position: relative;
-    top: 20%;
+}
+
+main {
+    display: grid;
+    width: 100%;
+    grid-column-gap: .5em;
+    grid-template-columns: 33.333% 33.333% 33.3333%;
+    grid-template-rows: 45% 45%;
+    background-color: #dbdada;
+}
+
+main h3 {
+    text-transform: capitalize;
+}
+
+.imagenNoticia {
+    max-height: 250px;
+    width: 100%;
+    margin-bottom: 1.5em;
+}
+
+main img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    position: relative;
+    top: 2em;
+}
+
+main div {
+    padding: 0 .5em .5em .5em;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    border-radius: 0.5em;
+    border: 1px #c4c4be solid;
+    margin: 5px;
+}
+
+.read {
+    border: none;
+    padding: 2em;
+    margin-bottom: 2em;
+    background-color: orange;
+    color: #f5f5f5;
+    border-radius: 0.5em;
+    width: 100%;
+    text-align: center;
+}
+
+#suscribirse {
+    background-image: url(img/contacus.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    height: 75vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 45% 45%;
+    grid-column-gap: 1.5em;
+}
+
+.read:hover {
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+#suscribirse div:nth-child(1) {
+    height: 100%;
+    width: 70%;
+    margin-left: 6em;
+}
+
+#suscribirse form {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#suscribirse form label {
+    padding: 0%;
+    margin: 0%;
+}
+
+#suscribirse form input {
+    border-radius: 0.3em;
+    height: 2em;
+}
+
+#suscribirse form #comm {
+    height: 8em;
+}
+
+#suscribirse div:nth-child(2) {
+    position: relative;
+    top: 1em;
+    padding: 1em;
+    height: 90%;
+    border-radius: 10px;
+    background-color: #440d5a;
+    opacity: 0.5;
 }
